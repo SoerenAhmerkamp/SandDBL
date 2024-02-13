@@ -45,7 +45,7 @@ for xP = 1:size(o2_consumptionGr,1)
     m_NO3 = 1/k*log(0.42*k^2*conductivity*dynamicHead*(timeNO3+timeO2)*3600/por+1);
 
     Flux_o2 = m_o2 * o2_consumption*24;
-    singleCell = 955.*o2_consumption/140;
+    singleCell = 955.*o2_consumption;
     %Anoxia Calculation
     layers=4;
     Vol=zeros(layers,1);
